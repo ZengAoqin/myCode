@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/4.jpg</file>
+        <file>img/1.jpg</file>
+        <file>img/2.jpg</file>
+        <file>img/3.jpg</file>
+        <file>img/dog.png</file>
+        <file>img/dog_head.png</file>
+        <file>img/big.ico</file>
+        <file>img/help.ico</file>
+        <file>img/hua.ico</file>
+        <file>img/open.ico</file>
+        <file>img/quit.ico</file>
+        <file>img/save.ico</file>
+        <file>img/ssave.ico</file>
+        <file>img/xie.ico</file>
+    </qresource>
+</RCC>

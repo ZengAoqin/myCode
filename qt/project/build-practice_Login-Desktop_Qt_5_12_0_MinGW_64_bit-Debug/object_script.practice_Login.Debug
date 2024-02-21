@@ -1,0 +1,14 @@
+debug/main.o
+debug/login.o
+debug/welcome.o
+debug/view.o
+debug/mainwindow.o
+debug/timer.o
+debug/picture.o
+debug/qrc_img.o
+debug/moc_login.o
+debug/moc_welcome.o
+debug/moc_view.o
+debug/moc_mainwindow.o
+debug/moc_timer.o
+debug/moc_picture.o

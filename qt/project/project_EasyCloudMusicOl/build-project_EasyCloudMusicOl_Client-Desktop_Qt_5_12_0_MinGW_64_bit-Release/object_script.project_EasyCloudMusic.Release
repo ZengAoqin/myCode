@@ -1,0 +1,11 @@
+release/main.o
+release/easycloud.o
+release/cloudlogin.o
+release/myhttp.o
+release/song.o
+release/mytcp.o
+release/qrc_resource.o
+release/moc_easycloud.o
+release/moc_cloudlogin.o
+release/moc_myhttp.o
+release/moc_mytcp.o

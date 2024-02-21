@@ -1,0 +1,14 @@
+release/main.o
+release/login.o
+release/welcome.o
+release/view.o
+release/mainwindow.o
+release/timer.o
+release/picture.o
+release/qrc_img.o
+release/moc_login.o
+release/moc_welcome.o
+release/moc_view.o
+release/moc_mainwindow.o
+release/moc_timer.o
+release/moc_picture.o

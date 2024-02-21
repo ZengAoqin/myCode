@@ -1,0 +1,42 @@
+========线程池========
+	线程池是一种应用框架，主要应用于多个线程同时处理多个相同或相似的任务情况。
+	
+	框架就是一个别人已经写好的接口模块，你每次使用的时候，按照接口规定的要要求提供参数，就可以直接完成项目，减少搭建环境的时间
+	
+
+
+	
+struct tasklist 
+{
+	void* (*to_doProject)(void* arg);	//任务函数的指针
+	void* arg;							//任务函数需要的参数
+	struct tasklist* next;				//指向链表下一个的指针
+};
+
+
+struct pthread_pool
+{
+	pthread_mutex_t m;					//互斥资源，互斥体
+	pthread_cond_t c;					//互斥资源，互斥条件
+	
+	int active_pthread;					//当前正在运行的线程数量
+	int wait_task;						//当前正在等待的任务数量
+	
+	struct tasklist* taskhead;			//任务链表
+	pthread_t* tid;						//线程号的数组
+	
+	bool shut_down;						//判断是否需要销毁线程池
+};
+
+
+线程池的操作：
+1）初始化线程池
+2）向线程池添加线程
+3）线程池中添加任务
+4）销毁线程池
+
+
+for(int i = 3; i > 0; i--) //3 2 1
+{
+	
+}

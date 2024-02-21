@@ -1,0 +1,149 @@
+1.在类中声明静态成员的关键字是___static____
+
+2.关键字const是什么，有什么用？ 
+    声明常量：定义变量时的限定符，表示变量值不能改变。在定义时需初始化。
+    修饰函数参数：在函数定义或声明中，将参数声明为 const 可以指示该参数在函数体内部不会被修改。这样做可以提高代码的可读性，并确保函数内部不会意外地修改参数的值。
+    修饰类成员函数：在成员函数后面加上const，表示该成员函数不会修改类的成员变量。
+    修饰类成员变量：必须在对象的构造函数初始化列表中进行初始化，并且不能在后续的代码中修改其值。
+
+3.static有什么用？
+    修饰函数的局部变量：存放在数据段，只有程序结束才销毁
+    修饰全局函数和全局变量：只能在本源文件使用，存放在数据段，只有程序结束才销毁
+    修饰类的成员变量：静态数据成员在类的所有对象之间共享，并且必须在类外部进行定义和初始化。如有权限可以直接通过类名调用。
+    修饰类的成员函数：在类中声明的静态成员函数不依赖于类的任何对象，如有权限可以直接通过类名调用。
+
+4.const符号常量：
+(1) const char* p (2) char const* p (3)char* const p
+说明上面三种描述的区别？
+    const char* p：p 是一个指向字符常量的指针，即指针 p 所指向的字符是不可修改的。可以修改指针 p 本身的值，使其指向不同的字符常量。
+    char const* p 与第一种相同
+    char* const p：p 是一个指向字符的常量指针，即指针 p 本身是不可修改的，它始终指向相同的字符。可以通过 p 修改所指向的字符。
+
+1.以下关于静态成员函数的叙述不正确的是_c_
+a.静态成员函数属于整个类
+b.对于公有的静态成员函数可以通过类名或对象名来调用
+c.静态成员函数可以直接访问该类的非静态成员
+d.静态成员函数可以直接访问该类的静态成员
+
+2.下述静态成员的特性中，(D)是错误的
+A.静态成员函数不能利用this指针
+B.静态数据成员要在类体外进行初始化
+C.引用静态数据成员时，要在静态数据成员名前加<类名>和作用域运算符
+D.静态数据成员不是所有对象所共有的
+
+3.下列说法正确的是(B)
+A.可以定义修改对象数据成员的const成员函数
+B.不允许任何成员函数调用const对象，除非该成员函数也声明为const
+C.const对象可以调用非const成员函数
+D.const成员函数可以调用本类的非const成员函数
+
+4.读程序写结果____
+#include <iostream>
+class A
+{
+    const int i;
+    int& j;
+public:
+    A(int& var):i(10),j(var){}
+    void show() {cout << "i:" << i << endl << "j:" <<j <<endl;}
+};
+
+int main()
+{
+    int x=1;
+    A a1(x);
+    a1.show();
+}
+
+result:
+i:10
+j:1
+
+5.运行下列程序结果为______
+#include <iostream>
+class Obj
+{
+    static int i;
+public:
+    Obj(){i++;}
+    ~Obj(i--;)
+    static int getVal(){return i;}
+};
+
+int Obj::i=0;
+
+void f()
+{
+    Obj ob2;
+    cout << ob2.getVal(0);
+}
+
+int main()
+{
+    Obj ob1; 
+    f();
+    Obj* ob3=new Obj;
+    delete ob3;
+    cout<<Obj::getVal();
+    return 0;
+}
+
+result:
+21
+
+1.设计一个函数实现大位数相乘，例如：
+123456789*123456789=？
+
+#include <iostream>
+#include <cstring>
+#include <cstdlib>
+
+using namespace std;
+
+//创建一个类
+class Data
+{
+public:
+	//构造函数
+	Data(const char* str1, const char* str2)
+	{
+		memcpy(a, str1, 9);
+		memcpy(b, str2, 9);
+	}
+	//析构函数
+	~Data()
+	{
+
+	}
+	//静态成员函数申明
+	static void A();
+	
+	void display()
+	{
+		A();
+		cout << b << endl;
+	}
+private:
+	static char* a;
+	static char* b;
+	static int num;	//静态成员变量
+};
+
+//类外初始化
+
+int Data::num = 0;
+char* Data::a = new char;
+char* Data::b = new char;
+
+void Data::A()
+{
+	cout << "A()" << endl;
+	num = atoi(a)*atoi(b);
+	cout << num << endl;
+}
+
+int main()
+{
+	Data data("123456789", "123456789");
+	data.display();
+}

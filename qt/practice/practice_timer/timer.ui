@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Timer</class>
+ <widget class="QWidget" name="Timer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>计时器</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="img.qrc">
+    <normaloff>:/img/dog_head.png</normaloff>:/img/dog_head.png</iconset>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="img.qrc">:/img/4.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>430</y>
+     <width>261</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	border:2px solid black;
+	border-radius:10px;
+	background-color:white;
+}
+
+QPushButton:hover
+{
+	background-color:rgb(230, 207, 255);
+}
+
+QPushButton:pressed
+{
+	background-color:rgb(165, 255, 218);
+}</string>
+   </property>
+   <property name="text">
+    <string>开始计时</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>430</y>
+     <width>261</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	border:2px solid black;
+	border-radius:10px;
+	background-color:white;
+}
+
+QPushButton:hover
+{
+	background-color:rgb(230, 207, 255);
+}
+
+QPushButton:pressed
+{
+	background-color:rgb(165, 255, 218);
+}</string>
+   </property>
+   <property name="text">
+    <string>停止</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>20</y>
+     <width>651</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="digitCount">
+    <number>19</number>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>100</y>
+     <width>231</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="digitCount">
+    <number>3</number>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

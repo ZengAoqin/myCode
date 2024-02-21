@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QWidget" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/image/app.ico</normaloff>:/image/app.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit
+{
+border:2px solid#ff0000;
+border-radius:25px;
+}
+QLabel#label
+{
+COlor:red;
+margin:10px;
+padding:10px;
+}
+QLabel#label_image
+{
+border:2px solid#ff0000; 
+border-radius:60px;
+border-image: url(:/image/1.jpg);
+}
+QPushButton
+{
+border:2px solid#ff0000;
+border-radius:20px;
+}
+QPushButton:hover#pBtn_login
+{
+background-color:red
+}
+QPushButton:pressed#pBtn_login
+{
+background-color:rgb(0,255,0)
+}
+QPushButton:hover#pBtn_cannel
+{
+border-image: url(:/image/3.jpg);
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>20</y>
+     <width>331</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>XX登录界面</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_image">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>120</width>
+     <height>120</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_Name">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>150</y>
+     <width>281</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="maxLength">
+    <number>10</number>
+   </property>
+   <property name="placeholderText">
+    <string>请输入账号</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_PWD">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>220</y>
+     <width>281</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="maxLength">
+    <number>10</number>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::PasswordEchoOnEdit</enum>
+   </property>
+   <property name="placeholderText">
+    <string>请输入密码</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BG">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>650</width>
+     <height>450</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/2.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pBtn_login">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>360</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>登录</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pBtn_cannel">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>360</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <zorder>label_BG</zorder>
+  <zorder>label</zorder>
+  <zorder>label_image</zorder>
+  <zorder>lineEdit_Name</zorder>
+  <zorder>lineEdit_PWD</zorder>
+  <zorder>pBtn_login</zorder>
+  <zorder>pBtn_cannel</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,10 @@
+release/main.o
+release/heroplane.o
+release/mainscene.o
+release/map.o
+release/enemyplane.o
+release/bullet.o
+release/bomb.o
+release/prop.o
+release/qrc_resource.o
+release/moc_mainscene.o

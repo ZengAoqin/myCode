@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MusicServer</class>
+ <widget class="QWidget" name="MusicServer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>音乐服务器</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>1290</x>
+     <y>50</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>音乐服务器</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPort">
+   <property name="geometry">
+    <rect>
+     <x>1200</x>
+     <y>120</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="placeholderText">
+    <string>服务器端口号</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonStart">
+   <property name="geometry">
+    <rect>
+     <x>1300</x>
+     <y>200</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>启动</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>1320</x>
+     <y>330</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>添加音乐</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditTitle">
+   <property name="geometry">
+    <rect>
+     <x>1200</x>
+     <y>400</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="placeholderText">
+    <string>音乐标题</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditArtist">
+   <property name="geometry">
+    <rect>
+     <x>1200</x>
+     <y>480</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>歌手名称</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonFile">
+   <property name="geometry">
+    <rect>
+     <x>1200</x>
+     <y>720</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>选择文件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonAddMusic">
+   <property name="geometry">
+    <rect>
+     <x>1400</x>
+     <y>720</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>1111</width>
+     <height>841</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>1200</x>
+     <y>560</y>
+     <width>351</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="placeholderText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonDeleteMusic">
+   <property name="geometry">
+    <rect>
+     <x>1400</x>
+     <y>800</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonStop">
+   <property name="geometry">
+    <rect>
+     <x>1200</x>
+     <y>800</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>停止播放</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

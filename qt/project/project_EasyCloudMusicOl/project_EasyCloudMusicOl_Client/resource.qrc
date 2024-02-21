@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/icon.png</file>
+        <file>img/apps.png</file>
+        <file>img/window_icon.jpg</file>
+        <file>img/bar_font.png</file>
+        <file>img/bar_icon.png</file>
+        <file>img/carousel.png</file>
+        <file>img/random.png</file>
+        <file>img/lastSong.png</file>
+        <file>img/nextSong.png</file>
+        <file>img/play.png</file>
+        <file>img/stop.png</file>
+        <file>img/expand.png</file>
+        <file>img/playList.png</file>
+        <file>img/ranking.png</file>
+    </qresource>
+</RCC>

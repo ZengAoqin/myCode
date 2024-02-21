@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/app.ico</file>
+        <file>image/big.ico</file>
+        <file>image/help.ico</file>
+        <file>image/hua.ico</file>
+        <file>image/open.ico</file>
+        <file>image/open.jpg</file>
+        <file>image/quit.ico</file>
+        <file>image/save.ico</file>
+        <file>image/ssave.ico</file>
+        <file>image/xie.ico</file>
+    </qresource>
+</RCC>

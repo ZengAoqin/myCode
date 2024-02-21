@@ -1,0 +1,64 @@
+#include <signal.h>
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <sys/wait.h>
+#include <setjmp.h>
+
+//跳转的标记
+jmp_buf env;
+
+void fun(int sig)
+{
+	switch(sig)
+	{
+		case SIGUSR1:
+		{
+			siglongjmp(env, 1); //跳转到setjmp(env)，并且函数结果为1
+			break;
+		}
+		case SIGUSR2:
+		{
+			siglongjmp(env, 2);
+			break;
+		}
+		default:
+		{
+			break;
+		}
+	}
+}
+
+int main(int argc, char** argv)
+{
+	printf("current pid:%d\n", getpid());
+	int ret = sigsetjmp(env, 1); //第二个参数不为0则不阻塞相同的信号
+	printf("call setjmp ret = %d\n", ret);
+	switch(ret)
+	{
+		case 1:
+		{
+			printf("env=1\n");
+			break;
+		}
+		case 2:
+		{
+			printf("env=2\n");
+			break;
+		}
+		default:
+		{
+			printf("env=%d\n", ret);
+			break;
+		}
+	}
+	
+	//注册信号SIGUSR1
+	signal(SIGUSR1, fun);
+	signal(SIGUSR2, fun);
+	
+	for(;;);
+	
+	return 0;
+}

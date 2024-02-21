@@ -1,0 +1,10 @@
+debug/main.o
+debug/heroplane.o
+debug/mainscene.o
+debug/map.o
+debug/enemyplane.o
+debug/bullet.o
+debug/bomb.o
+debug/prop.o
+debug/qrc_resource.o
+debug/moc_mainscene.o

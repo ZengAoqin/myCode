@@ -1,0 +1,11 @@
+debug/main.o
+debug/easycloud.o
+debug/cloudlogin.o
+debug/myhttp.o
+debug/song.o
+debug/mytcp.o
+debug/qrc_resource.o
+debug/moc_easycloud.o
+debug/moc_cloudlogin.o
+debug/moc_myhttp.o
+debug/moc_mytcp.o

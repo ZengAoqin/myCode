@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Picture</class>
+ <widget class="QMainWindow" name="Picture">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1090</width>
+    <height>729</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图片播放器</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="img.qrc">
+    <normaloff>:/img/dog_head.png</normaloff>:/img/dog_head.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1071</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_prev">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>650</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border:2px solid black;
+	border-radius:10px;
+	background-color:white;
+}
+
+QPushButton:hover
+{
+	background-color:rgb(230, 207, 255);
+}
+
+QPushButton:pressed
+{
+	background-color:rgb(165, 255, 218);
+}</string>
+    </property>
+    <property name="text">
+     <string>上一张</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_next">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>650</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border:2px solid black;
+	border-radius:10px;
+	background-color:white;
+}
+
+QPushButton:hover
+{
+	background-color:rgb(230, 207, 255);
+}
+
+QPushButton:pressed
+{
+	background-color:rgb(165, 255, 218);
+}</string>
+    </property>
+    <property name="text">
+     <string>下一张</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_start">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>650</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border:2px solid black;
+	border-radius:10px;
+	background-color:white;
+}
+
+QPushButton:hover
+{
+	background-color:rgb(230, 207, 255);
+}
+
+QPushButton:pressed
+{
+	background-color:rgb(165, 255, 218);
+}</string>
+    </property>
+    <property name="text">
+     <string>开始播放</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_open">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>650</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border:2px solid black;
+	border-radius:10px;
+	background-color:white;
+}
+
+QPushButton:hover
+{
+	background-color:rgb(230, 207, 255);
+}
+
+QPushButton:pressed
+{
+	background-color:rgb(165, 255, 218);
+}</string>
+    </property>
+    <property name="text">
+     <string>打开图片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_stop">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>650</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border:2px solid black;
+	border-radius:10px;
+	background-color:white;
+}
+
+QPushButton:hover
+{
+	background-color:rgb(230, 207, 255);
+}
+
+QPushButton:pressed
+{
+	background-color:rgb(165, 255, 218);
+}</string>
+    </property>
+    <property name="text">
+     <string>停止播放</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

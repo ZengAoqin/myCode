@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ServerWindow</class>
+ <widget class="QWidget" name="ServerWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>823</width>
+    <height>447</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ServerWindow</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>781</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="lineProt">
+        <property name="font">
+         <font>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="placeholderText">
+         <string>请输入端口号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnBind">
+        <property name="font">
+         <font>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>绑定</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineGroup">
+        <property name="font">
+         <font>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="placeholderText">
+         <string>请输入组播地址</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox">
+        <property name="font">
+         <font>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>添加组播</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="textBrowser"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileText</class>
+ <widget class="QMainWindow" name="FileText">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>805</width>
+    <height>439</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FileText</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>0</y>
+      <width>801</width>
+      <height>350</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>805</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionsaveas"/>
+    <addaction name="actionquit"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <addaction name="actionfont"/>
+    <addaction name="actioncolor"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="actionhelp"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopen"/>
+   <addaction name="actionsave"/>
+   <addaction name="actionsaveas"/>
+   <addaction name="actionquit"/>
+   <addaction name="actionhelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/open.ico</normaloff>:/image/open.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/save.ico</normaloff>:/image/save.ico</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="toolTip">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionsaveas">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/ssave.ico</normaloff>:/image/ssave.ico</iconset>
+   </property>
+   <property name="text">
+    <string>另存为</string>
+   </property>
+   <property name="toolTip">
+    <string>另存为</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionquit">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/quit.ico</normaloff>:/image/quit.ico</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionfont">
+   <property name="text">
+    <string>字体设置</string>
+   </property>
+   <property name="toolTip">
+    <string>字体设置</string>
+   </property>
+  </action>
+  <action name="actioncolor">
+   <property name="text">
+    <string>颜色设置</string>
+   </property>
+   <property name="toolTip">
+    <string>颜色设置</string>
+   </property>
+  </action>
+  <action name="actionhelp">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/help.ico</normaloff>:/image/help.ico</iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="toolTip">
+    <string>关于</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
